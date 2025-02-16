@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_browse_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity"
+    android:background="@color/mainBackground">
+
+
+    <ImageView
+        android:id="@+id/displayImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/image_frame_vector"
+        app:srcCompat="@drawable/image_frame_vector" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="@color/mainButton"
+        android:textColor="@color/mainText"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/galleryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="225dp"
+        android:backgroundTint="@color/mainButton"
+        android:textColor="@color/mainText"
+        android:text="Gallery" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/postName"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textColor="@color/mainText"
+        android:hint="Title" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/size_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:onClick="checkSizeButton"
+            android:textColor="@color/mainText"
+            />
+        <RadioButton
+            android:id="@+id/size_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:onClick="checkSizeButton"
+            android:textColor="@color/mainText"
+            />
+        <RadioButton
+            android:id="@+id/size_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:onClick="checkSizeButton"
+            android:textColor="@color/mainText"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/mainButton"
+        android:textColor="@color/mainText"
+        android:text="Submit" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="@color/navigation"
+        app:itemIconTint="@color/mainText"
+        app:itemTextColor="@color/mainText"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_settings_24"
+        android:foreground="@drawable/baseline_settings_24"
+        android:foregroundTint="@color/settings"
+        android:backgroundTint="@color/settings"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded"
+        />
+
+    <Button
+        android:id="@+id/Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Profile"
+        android:textColor="@color/mainText"
+        android:backgroundTint="@color/mainButton"
+        android:layout_marginLeft="5dp"
+        />
+</RelativeLayout>

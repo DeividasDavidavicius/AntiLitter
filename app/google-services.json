@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "352606706657",
+    "project_id": "siuksliu-programele",
+    "storage_bucket": "siuksliu-programele.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352606706657:android:567b37d91381cf97ddd0a0",
+        "android_client_info": {
+          "package_name": "com.example.siukslesv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352606706657-ek1n8de27m9jlr9h05ffgl9vs4pl4941.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChWtuMWtlw-A-VtpyBbtXJeU78OHzouag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352606706657-ek1n8de27m9jlr9h05ffgl9vs4pl4941.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

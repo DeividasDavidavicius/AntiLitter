@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".profileActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/profilePageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textColor="@color/mainText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="40dp"
+            app:layout_constraintVertical_bias="0.506" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/usernameViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Username:"
+            android:textColor="@color/mainText"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/usernameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text=""
+            android:textColor="@color/mainText"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/emailViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Email:"
+            android:textColor="@color/mainText"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text=""
+            android:textColor="@color/mainText"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/titleViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Title:"
+            android:textColor="@color/mainText"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text=""
+            android:textColor="@color/mainText"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/navigation"
+        app:itemIconTint="@color/mainText"
+        app:itemTextColor="@color/mainText"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_settings_24"
+        android:foreground="@drawable/baseline_settings_24"
+        android:foregroundTint="@color/settings"
+        android:backgroundTint="@color/settings"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:id="@+id/Padding1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"
+            android:textSize="25dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/EditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/mainButton"
+            android:textColor="@color/mainText"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/Padding2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"
+            android:textSize="25dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/PointsShopNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Shop"
+            android:backgroundTint="@color/mainButton"
+            android:textColor="@color/mainText"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/Padding3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"
+            android:textSize="25dp"
+            android:text="" />
+    </LinearLayout>
+
+</RelativeLayout>

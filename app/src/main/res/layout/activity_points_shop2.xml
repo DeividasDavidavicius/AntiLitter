@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PointsShopActivity2"
+    android:background="@color/mainBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pointsShopPageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points Shop"
+            android:textSize="40dp"
+            android:textColor="@color/mainText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506"
+            />
+
+        <TextView
+            android:id="@+id/pointsShopPageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page 2/2"
+            android:textColor="@color/mainText"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pointsShopPageName"
+            app:layout_constraintVertical_bias="0.506" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/navigation"
+        app:itemIconTint="@color/mainText"
+        app:itemTextColor="@color/mainText"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/baseline_settings_24"
+        android:foreground="@drawable/baseline_settings_24"
+        android:foregroundTint="@color/settings"
+        android:backgroundTint="@color/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:textColor="@color/mainText"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/pointCountNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Current point amount:"
+            android:textColor="@color/mainText"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/pointCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/mainText"
+            android:text=""
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0.45"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buyView1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textAlignment="center"
+                    android:text="Temp"
+                    android:textColor="@color/mainText"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/priceNameView1"
+                        android:layout_weight="0.5"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewEnd"
+                        android:text="Price:"
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/priceView1"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainButton"
+                    android:textColor="@color/mainText"
+                    android:text="Buy" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buyView2"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/mainText"
+                    android:textAlignment="center"
+                    android:text="Temp"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/priceNameView2"
+                        android:layout_weight="0.5"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewEnd"
+                        android:text="Price:"
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/priceView2"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton2"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainButton"
+                    android:textColor="@color/mainText"
+                    android:text="Buy" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0.45"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buyView3"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/mainText"
+                    android:textAlignment="center"
+                    android:text="Temp"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/priceNameView3"
+                        android:layout_weight="0.5"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewEnd"
+                        android:text="Price:"
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/priceView3"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton3"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainButton"
+                    android:textColor="@color/mainText"
+                    android:text="Buy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/buyView4"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/mainText"
+                    android:textAlignment="center"
+                    android:text="Temp"
+                    android:textStyle="bold"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/priceNameView4"
+                        android:layout_weight="0.5"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewEnd"
+                        android:text="Price:"
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/priceView4"
+                        android:layout_weight="0.5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:textAlignment="viewStart"
+                        android:text=""
+                        android:textColor="@color/mainText"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buyButton4"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainButton"
+                    android:textColor="@color/mainText"
+                    android:text="Buy" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="0.8">
+
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Previous page"
+                android:backgroundTint="@color/mainButton"
+                android:textColor="@color/mainText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
